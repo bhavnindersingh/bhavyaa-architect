@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Architect Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Video Section -->
+    <header class="hero">
+        <video autoplay muted loop id="headerVideo">
+            <source src="assets/header-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Crafting Sustainable Spaces for Tomorrow</p>
+            <p class="hero-text">Where innovative design meets environmental responsibility</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Bhavya</span>
+                <span class="logo-separator">|</span>
+                <span class="logo-subtitle">architect</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Residential Design</h3>
+                <p>Creating living spaces that reflect your lifestyle and aspirations</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Commercial Projects</h3>
+                <p>Innovative solutions for modern business environments</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Interior Planning</h3>
+                <p>Thoughtful interior layouts that maximize space and functionality</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Sustainable Design</h3>
+                <p>Eco-friendly architecture for a better tomorrow</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="interior">Interior</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="residential">
+                <img src="assets/eco-house.jpg" alt="Eco-Friendly House">
+                <div class="portfolio-overlay">
+                    <h3>Eco-Friendly Villa</h3>
+                    <p>A sustainable 4-bedroom villa featuring solar panels, rainwater harvesting, and natural ventilation</p>
+                    <p class="project-details">Location: Bangalore | Area: 4,500 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="commercial">
+                <img src="assets/office-complex.jpg" alt="Green Office Complex">
+                <div class="portfolio-overlay">
+                    <h3>Green Office Complex</h3>
+                    <p>LEED-certified commercial space with innovative energy-saving design</p>
+                    <p class="project-details">Location: Chennai | Area: 25,000 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="residential">
+                <img src="assets/modern-apartment.jpg" alt="Modern Apartment">
+                <div class="portfolio-overlay">
+                    <h3>Urban Living Spaces</h3>
+                    <p>Contemporary apartment complex with community gardens and eco-friendly materials</p>
+                    <p class="project-details">Location: Hyderabad | Area: 12,000 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="interior">
+                <img src="assets/restaurant-interior.jpg" alt="Restaurant Interior">
+                <div class="portfolio-overlay">
+                    <h3>Organic Restaurant Design</h3>
+                    <p>Biophilic interior design with living walls and natural lighting</p>
+                    <p class="project-details">Location: Mumbai | Area: 2,800 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="commercial">
+                <img src="assets/wellness-center.jpg" alt="Wellness Center">
+                <div class="portfolio-overlay">
+                    <h3>Holistic Wellness Center</h3>
+                    <p>Zen-inspired architecture promoting healing and tranquility</p>
+                    <p class="project-details">Location: Pune | Area: 8,000 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="interior">
+                <img src="assets/home-interior.jpg" alt="Luxury Home Interior">
+                <div class="portfolio-overlay">
+                    <h3>Minimalist Home Interior</h3>
+                    <p>Sustainable luxury interior with recycled materials and energy-efficient lighting</p>
+                    <p class="project-details">Location: Delhi | Area: 3,200 sq.ft</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/architect-photo.jpg" alt="Bhavya Architect">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="about-intro">Transforming spaces into extraordinary experiences</p>
+                <p class="about-text">With a passion for innovative design and sustainable architecture, I create spaces that seamlessly blend functionality with aesthetic beauty. Each project is approached with a unique perspective, ensuring that the final result exceeds expectations while remaining true to the client's vision.</p>
+                <div class="experience-stats">
+                    <div class="stat">
+                        <span class="number">10+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">30+</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Create Something Amazing</h2>
+                <p class="contact-intro">Ready to start your project? Get in touch today.</p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/918148132442" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Connect on WhatsApp
+                    </a>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> bhayvya@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 8148132442</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Bhavya|architect</div>
+            <p>&copy; 2024 Bhavya Architect. All rights reserved.</p>
+            <div class="footer-nav">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
