@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavya Architect Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Video Section -->
     <header class="hero">
-        <video autoplay muted loop id="headerVideo">
+        <video autoplay muted loop id="headerVideo" poster="assets/modern-apartment.jpg">
             <source src="assets/header-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <img src="assets/modern-apartment.jpg" alt="Modern Architecture" title="Your browser does not support the video tag">
         </video>
         <div class="hero-overlay"></div>
+        <div class="texture-overlay"></div>
         <div class="hero-content">
-            <p class="hero-subtitle">Crafting Sustainable Spaces for Tomorrow</p>
-            <p class="hero-text">Where innovative design meets environmental responsibility</p>
+            <div class="hero-text-container">
+                <p class="hero-subtitle">Crafting Sustainable Spaces</p>
+                <div class="arch-line"></div>
+                <p class="hero-text">Where innovative design meets environmental responsibility</p>
+            </div>
             <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
+                <div class="scroll-line"></div>
+                <span>Scroll to explore</span>
             </div>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="nav-architectural">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-text">Bhavya</span>
-                <span class="logo-separator">|</span>
+                <div class="logo-line"></div>
                 <span class="logo-subtitle">architect</span>
             </div>
             <ul class="nav-links">
@@ -40,35 +45,45 @@
                 <li><a href="#contact" class="contact-btn">Contact</a></li>
             </ul>
             <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
-        <h2>Services</h2>
+    <section id="services">
+        <h2 class="section-title">Services</h2>
         <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-home"></i>
-                <h3>Residential Design</h3>
-                <p>Creating living spaces that reflect your lifestyle and aspirations</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-building"></i>
-                <h3>Commercial Projects</h3>
-                <p>Innovative solutions for modern business environments</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-pencil-ruler"></i>
-                <h3>Interior Planning</h3>
-                <p>Thoughtful interior layouts that maximize space and functionality</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-leaf"></i>
-                <h3>Sustainable Design</h3>
-                <p>Eco-friendly architecture for a better tomorrow</p>
-            </div>
+            <a href="#residential-design" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-house-chimney"></i>
+                </div>
+                <h3 class="service-title">Residential Design</h3>
+                <p class="service-description">Creating living spaces that reflect your lifestyle and aspirations</p>
+            </a>
+            <a href="#commercial-projects" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-city"></i>
+                </div>
+                <h3 class="service-title">Commercial Projects</h3>
+                <p class="service-description">Innovative solutions for modern business environments</p>
+            </a>
+            <a href="#interior-planning" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h3 class="service-title">Interior Planning</h3>
+                <p class="service-description">Thoughtful interior layouts that maximize space and functionality</p>
+            </a>
+            <a href="#sustainable-design" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3 class="service-title">Sustainable Design</h3>
+                <p class="service-description">Eco-friendly architecture for a better tomorrow</p>
+            </a>
         </div>
     </section>
 
